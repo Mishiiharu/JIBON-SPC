@@ -384,6 +384,7 @@ margin-bottom: 2rem;
 .latest{
   padding-bottom: 5rem;
   padding-bottom: 20rem;
+  background-color:var(--gray)
 }
 .latest__title{
   text-align:center;
@@ -398,6 +399,43 @@ margin-bottom: 2rem;
   font-weight: 300;
   margin-bottom: 2rem;
 }
+.latest__wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  text-align: center;
+}
+.latest__pro h4{
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color:var(--light);
+  align-items: center;
+  transform: translateY(-20rem);
+  font-weight: 700;
+}
+.latest__pro p{
+  font-weight: 300;
+  color:var(--light);
+  transform: translateY(-20rem);
+}
+.latest__pro img{
+  align-items: center;
+  opacity: calc(100%);
+  border-radius:1rem;
+}
+
+/* DI PA NAGANA: */
+.latest__pro ul{
+  justify-content:center;
+  display: flex;
+  gap:3rem;
+}
+.latest__pro ul li a{
+  color: var(--light);
+ }
+ .latest__pro ul li a:hover{
+   color:var(--green);
+ }
 
 
   /* REPEATABLE PATTERNS */
@@ -421,7 +459,7 @@ margin-bottom: 2rem;
   color:var(--dark);
 }
 .btn.bg--border-light{
-  background-color: var(--light);
+  background-color: transparent;
   border: 1px solid var(--light);
   color:var(--light);
 }
